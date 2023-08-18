@@ -16,4 +16,12 @@
     background-color: white;
     text-align: center;
     font-size: 50px;
+
+    -webkit-animation: fadein 2s;
+            animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
