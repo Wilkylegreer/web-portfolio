@@ -24,15 +24,6 @@ a {
 
 h1 {
   text-align: center;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+  opacity: 0;
+  animation: dropin 2s ease-in-out 1s forwards;
 }
