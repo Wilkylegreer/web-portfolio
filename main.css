@@ -25,5 +25,21 @@ a {
 h1 {
   text-align: center;
   opacity: 0;
-  animation: dropin 2s ease-in-out 1s forwards;
+  background-image: linear-gradient(
+    90deg,
+    #435b66 0%,
+    #a76f6f 25%,
+    #eab2a0 50%,
+    #a76f6f 75%,
+    #435b66 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear 0s infinite, dropin 2s ease-in-out 1s forwards;
 }

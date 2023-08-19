@@ -41,3 +41,9 @@
     transform: translateX(0px);
   }
 }
+
+@keyframes textclip {
+  to {
+    background-position: 800% center;
+  }
+}
