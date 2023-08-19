@@ -1,27 +1,38 @@
 @font-face {
-    font-family: Roboto-Normal;
-    src: url(fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+  font-family: Roboto-Normal;
+  src: url(fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: Futura;
+  src: url(fonts/Futura_sv/Futura\ Std\ Heavy.ttf);
 }
 
 * {
-    font-family: Roboto-Normal;
+  font-family: Futura;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    text-align: center;
-    font-size: 50px;
+body,
+h1,
+a {
+  margin: 0;
+  padding: 0;
+}
 
-    -webkit-animation: fadein 2s;
-            animation: fadein 2s;
+h1 {
+  text-align: center;
 }
 
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

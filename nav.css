@@ -1,0 +1,21 @@
+/* Style the centered content */
+.centered-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Style the side links */
+.side-link {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* Style the name */
+.name {
+  font-size: 2.5rem;
+}
