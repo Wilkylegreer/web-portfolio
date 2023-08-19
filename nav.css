@@ -15,7 +15,7 @@
   font-weight: bold;
   font-size: 40px;
   opacity: 0;
-  animation: leftin 2s ease-in-out 3s forwards;
+  animation: risein 2s ease-in-out 3s forwards;
 }
 
 .link {
