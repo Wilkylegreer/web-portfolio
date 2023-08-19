@@ -15,11 +15,20 @@
   color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 h1,
+h2,
 a {
   margin: 0;
   padding: 0;
+}
+
+span {
+  font-size: 90px;
 }
 
 h1 {
@@ -42,4 +51,9 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 10s linear 0s infinite, dropin 2s ease-in-out 1s forwards;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
 }
