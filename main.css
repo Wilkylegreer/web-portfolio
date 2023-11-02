@@ -8,6 +8,11 @@
   src: url(fonts/Futura_sv/Futura\ Std\ Heavy.ttf);
 }
 
+@font-face {
+  font-family: Futura_Light;
+  src: url(fonts/Futura_sv/Futura_Book.ttf);
+}
+
 * {
   font-family: Futura;
   list-style: none;
@@ -56,4 +61,20 @@ h1 {
 h2 {
   text-align: center;
   font-size: 40px;
+}
+
+#aboutme-desc {
+  margin-left: 400px;
+  margin-right: 400px;
+  font-size: 20px;
+  font-family: "Futura_Light";
+}
+
+img {
+  padding-top: 10px;
+  width: 300px;
+  border-radius: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
