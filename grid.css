@@ -1,8 +1,13 @@
+@font-face {
+  font-family: Futura_Light;
+  src: url(fonts/Futura_sv/Futura_Book.ttf);
+}
+
 .grid-container {
   display: grid;
   column-gap: 50px;
   row-gap: 50px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 300px 300px 300px;
   padding: 10px;
 }
 
@@ -10,7 +15,14 @@
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 5px;
+  width: 300px;
   padding: 20px;
   font-size: 30px;
+  text-align: center;
+}
+
+.grid-item p {
+  font-size: 20px;
+  font-family: 'Futura_Light';
   text-align: center;
 }
