@@ -36,6 +36,8 @@ span {
   font-size: 90px;
 }
 
+/* #031D44 #04395E #70A288 #DAB785 #D5896F */
+
 h1 {
   text-align: center;
   opacity: 0;
@@ -58,9 +60,17 @@ h1 {
   animation: textclip 10s linear 0s infinite, dropin 2s ease-in-out 1s forwards;
 }
 
-.title {
-  padding-top: 30px;
+footer {
   text-align: center;
+  margin-top: 40px;
+  padding: 3px;
+  background-color: #f0f0f0;
+}
+
+.title {
+  margin-left: 50px;
+  padding-top: 30px;
+  text-align: left;
   font-size: 35px;
 }
 
