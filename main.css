@@ -81,8 +81,9 @@ h1 {
 
 img {
   float: left;
-  padding: 0px 10px 10px 0px;
+  margin: 0px 10px 10px 0px;
   margin-left: 60px;
   width: 400px;
   border-radius: 50%;
+  box-shadow: 10px 5px #f0f0f0;
 }
