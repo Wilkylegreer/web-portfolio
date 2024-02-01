@@ -67,6 +67,26 @@ footer {
   background-color: #f0f0f0;
 }
 
+.github img {
+  margin-top: 15px;
+  vertical-align: top;
+  width: 1.53%;
+}
+
+.github:hover {
+  filter: invert(75%);
+}
+
+.instagram img  {
+  margin-top: 15px;
+  vertical-align: top;
+  width: 1.5%;
+}
+
+.instagram:hover {
+  filter: invert(75%)
+}
+
 .title {
   margin-left: 50px;
   padding-top: 30px;
