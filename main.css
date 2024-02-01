@@ -60,10 +60,10 @@ h1 {
   animation: textclip 10s linear 0s infinite, dropin 2s ease-in-out 1s forwards;
 }
 
-footer {
+footer p {
   text-align: center;
-  margin-top: 40px;
-  padding: 3px;
+  margin-top: 120px;
+  padding: 10px;
   background-color: #f0f0f0;
 }
 

@@ -8,8 +8,12 @@ body {
 }
 
 .header {
-  text-align: center;
-  padding: 32px;
+  text-align: left;
+  margin-left: 85px;
+}
+
+.info {
+  margin-left: 50px;
 }
 
 .row {
