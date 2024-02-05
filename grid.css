@@ -1,3 +1,11 @@
+/* 
+2B2A36
+D5DDE8
+7B6055
+7D787D
+5C493F
+*/
+
 @font-face {
   font-family: Futura_Light;
   src: url(fonts/Futura_sv/Futura_Book.ttf);
@@ -5,20 +13,24 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 60px;
-  row-gap: 60px;
-  padding: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 5px;
+  justify-items: center;
 }
 
 .grid-item {
-  background-color: #f0f0f0;
-  border-radius: 20px;
+  background-color: #d5dde8;
+  border-radius: 5px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  box-shadow: 7px 7px #7d787d;
+  width: 50%;
 }
 
+.grid-item h3 {
+  text-align: center;
+}
 .grid-item p {
   font-size: 20px;
   font-family: "Futura_Light";
