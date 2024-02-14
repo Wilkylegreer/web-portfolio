@@ -49,15 +49,17 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin-top: 20px; /* Add margin to create space between navbar and container */
 }
 
 .image {
-    width: 40%;
-    max-width: 36.2%; /* Ensure the image doesn't exceed its container width */
+    margin-right: 2%;
+    max-height: 90%;
+    max-width: 90%;
 }
 
 .text {
+    background-color: brown;
     width: 100%;
+    margin-left: 20%;
 }
 
