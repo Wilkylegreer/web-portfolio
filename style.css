@@ -1,27 +1,36 @@
+@font-face {
+    font-family: Futura;
+    src: url(fonts/Futura_sv/Futura\ Std\ Heavy.ttf);
+  }
+
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-.topnav {
-    overflow: hidden;
+    font-family: Futura;
 }
 
-.topnav a {
-    float: right;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 36px;
     color: black;
-    text-align: center;
-    padding: 14px 16px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
     text-decoration: none;
-    font-size: 32px;
+    color: black;
+    font-size: 25px;
+    margin: 0 15px;
 }
 
-.topnav a:hover {
+.nav-links a:hover {
     color: gray;
-}
-
-/* Create a right-aligned (split) link inside the navigation bar */
-.topnav a.split {
-    float: left;
-    font-size: 50px;
 }
