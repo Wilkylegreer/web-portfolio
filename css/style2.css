@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/Futura_sv/Futura\ Std\ Heavy.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Futura;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: lightgray;
+}
+
+.logo {
+    font-size: 36px;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin: 0 15px;
+}
+
+.nav-links a:hover {
+    color: gray;
+}
+
+.container {
+    height: 75vh;
+    background-color: aqua;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 20px; /* Add margin to create space between navbar and container */
+}
+
+.image {
+    width: 40%;
+    max-width: 36.2%; /* Ensure the image doesn't exceed its container width */
+}
+
+.text {
+    width: 100%;
+}
+

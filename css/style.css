@@ -13,6 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background-color: lightgray;
 }
 
 .logo {
@@ -33,4 +34,8 @@ body {
 
 .nav-links a:hover {
     color: gray;
+}
+
+.profile {
+    height: 500px;
 }
