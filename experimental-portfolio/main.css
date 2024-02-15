@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ================
+Typeography
+================ */
+
+h1 {
+    font-family: 'Ubuntu', serif;
+    font-weight: 400;
+    color: #143774;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+span {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.col-1 p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/* ================
+Layout
+================ */
+
+.container {
+    /* border: 1px solid magenta; */
+
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.container img {
+    max-width: 100%;
+    object-fit: cover;
+    transform: scale(1.8) translateX(-60px);
+}
+
+.container-about {
+    /* border: 2px solid greenyellow; */
+
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1 {
+    /* border: 2px solid orange; */
+
+    width: 40%;
+    margin: 0 1em 0 0;
+}
+
+@media (max-width: 915px) {
+    .col-1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container img {
+        width: 100%;
+    }
+}
+
+.col-2 {
+    /* border: 2px solid red; */
+
+    width: 60%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.col {
+    /* border: 2px solid blue; */
+
+    height: 50%;
+}
+
+.col p {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 915px) {
+    .container-nav {
+        flex-direction: column; 
+    }
+
+    .container-about {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .col {
+        height: auto;
+    }
+
+    .col-2 {
+        width: 100%;
+    }
+}
+
+header {
+    /* border: 2px solid lightblue; */
+
+    background: white;
+    padding: 1.6em 0;
+}
+
+@media (max-width: 915px) {
+    header {
+        text-align: center;
+        padding-bottom: .75em;
+    }
+}
+
+/* Navigation */
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover, 
+nav a:focus {
+    color: #1792d2
+}
+
+.current-page {
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 915px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
+}
