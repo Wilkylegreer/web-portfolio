@@ -1,123 +1,191 @@
-@font-face {
-  font-family: Roboto-Normal;
-  src: url(fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+/* 
+    D0B8AC
+    F3D8C7
+    EFE5DC
+    FBFEFB
+    FFFFFF
+
+    95cdec
+*/
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-@font-face {
-  font-family: Futura;
-  src: url(fonts/Futura_sv/Futura\ Std\ Heavy.ttf);
+/* ================
+Typeography
+================ */
+
+h1 {
+    font-family: 'Ubuntu', serif;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
 }
 
-@font-face {
-  font-family: Futura_Light;
-  src: url(fonts/Futura_sv/Futura_Book.ttf);
-}
-
-* {
-  font-family: Futura;
-  list-style: none;
-  text-decoration: none;
-  color: black;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body,
-h1,
-h2,
-a {
-  margin: 0;
-  padding: 0;
+.subtitle {
+    font-weight: 700;
+    color: #95cdec;
+    font-size: .75rem;
+    margin: 0;
 }
 
 span {
-  font-size: 90px;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
-/* #031D44 #04395E #70A288 #DAB785 #D5896F */
-
-h1 {
-  text-align: center;
-  opacity: 0;
-  background-image: linear-gradient(
-    90deg,
-    #435b66 0%,
-    #a76f6f 25%,
-    #eab2a0 50%,
-    #a76f6f 75%,
-    #435b66 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 10s linear 0s infinite, dropin 2s ease-in-out 1s forwards;
+.col-1 p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: left;
 }
 
-footer {
-  text-align: center;
-  margin-top: 120px;
-  padding: 10px;
-  background-color: #d5dde8;
+/* ================
+Layout
+================ */
+
+.container {
+    /* border: 1px solid magenta; */
+
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-.github img {
-  margin-top: 15px;
-  vertical-align: top;
-  width: 1.53%;
+.container-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
-.github:hover {
-  filter: invert(75%);
+.container-about {
+    /* border: 2px solid greenyellow; */
+
+    height: 70vh;
+    width: 90%;
+    padding-bottom: 5em;
 }
 
-.instagram img {
-  margin-top: 15px;
-  vertical-align: top;
-  width: 1.5%;
+.col-2 img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1.8) translateX(-60px);
 }
 
-.instagram:hover {
-  filter: invert(75%);
+.col-1 {
+    /* border: 2px solid orange; */
+
+    width: 40%;
+    margin: 0 1em 0 0;
 }
 
-.title {
-  margin-left: 50px;
-  padding-top: 30px;
-  text-align: left;
-  font-size: 35px;
+.col-2 {
+    /* border: 2px solid red; */
+
+    width: 60%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
-#text-cont {
-  margin-left: 500px;
+.item-1 {
+    /* border: 2px solid blue; */
+
+    height: 40%;
 }
 
-#aboutme {
-  font-size: 35px;
-  padding-top: 50px;
+.item-2 {
+    /* border: 2px solid blue; */
+
+    height: 60%;
 }
 
-#aboutme-desc {
-  font-size: 20px;
-  font-family: "Futura_Light";
-  margin-right: 33.3%;
+.item-1 p,
+.item-2 p {
+    margin: 0;
+    padding: 0;
 }
 
-.profile {
-  float: left;
-  margin: 0px 10px 10px 0px;
-  margin-left: 60px;
-  width: 400px;
-  border-radius: 50%;
-  box-shadow: 10px 5px #f0f0f0;
+header {
+    /* border: 2px solid lightblue; */
+
+    background: white;
+    padding: 1.6em 0;
 }
 
-.aboutdiv {
-  padding-top: 15px;
+/* Navigation */
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover, 
+nav a:focus {
+    color: #95cdec
+}
+
+.current-page {
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 915px) {
+    header {
+        text-align: center;
+        padding-bottom: .75em;
+    }
+
+    .col-1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .container-flex {
+        flex-direction: column; 
+    }
+
+    .container-about {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .item-1,
+    .itme-2 {
+        height: auto;
+    }
+
+    .col-2 {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
 }
