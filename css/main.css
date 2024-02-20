@@ -130,7 +130,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #707070;
+    color: #000000;
     font-weight: 700;
     padding: .25em 0;
 }
@@ -141,17 +141,17 @@ nav a:focus {
 }
 
 .current-page {
-    border-bottom: 2px solid #707070;
+    border-bottom: 2px solid #000000;
 }
 
 .current-page:hover {
-    color: #707070;
+    color: #000000;
 }
 
 @media (max-width: 915px) {
     header {
         text-align: center;
-        padding-bottom: .75em;
+        padding-bottom: 0;
     }
 
     .col-1 {
@@ -164,7 +164,8 @@ nav a:focus {
     }
 
     .container-flex {
-        flex-direction: column; 
+        flex-direction: column;
+        padding-bottom: 0;
     }
 
     .container-about {
@@ -175,6 +176,10 @@ nav a:focus {
     .item-1,
     .itme-2 {
         height: auto;
+    }
+
+    .item-2 p {
+        padding-bottom: 1em;
     }
 
     .col-2 {
