@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="../css/block-sec.css">
+    <title>Will Greer | Photography</title>
+</head>
+<body>
+
+    <!-- ===============
+    Navigation
+    ==================== -->
+
+    <header>
+        <div class="container container-flex">
+            <div class="site-title">
+                <h1>WILL</h1>
+                <p class="subtitle">A step into creativity</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current-page">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Recent Posts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===============
+    Text & Picture
+    ==================== -->
+
+    <div class="container container-about container-flex">
+        <div class="col-1">
+            <div class="item-1"></div>
+            <div class="item-2">
+                <p>
+                    <span>My goal is to...</span><br />
+                    Help recreate your vision, whether that's something special, creative, 
+                    or even crazy! Making sure that you feel confident in your photos that 
+                    show your best self.
+                </p>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="../photos/Full_Pic.jpg" alt="My profile pic">
+        </div>
+    </div>
+
+    <!-- ===============
+    Photo Galleries
+    ==================== -->
+
+    <div class="container container-flex">
+            <button onclick="openCity(event, 'Engagement')">Engagement</button>
+            <button onclick="openCity(event, 'Portrait')">Portrait</button>
+            <button onclick="openCity(event, 'Other')">Other</button>
+    </div>
+
+    <div class="container container-flex">
+        <div id="Engagement" class="tabcontent">
+            <h1>Engagement</h1>
+        </div>
+
+        <div id="Portrait" class="tabcontent">
+            <h1>Portrait</h1>
+        </div>
+
+        <div id="Other" class="tabcontent">
+            <h1>Other</h1>
+        </div>
+    </div>
+
+    <!-- ===============
+    Javascript
+    ==================== -->
+
+    <script>
+        function openCity(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>
