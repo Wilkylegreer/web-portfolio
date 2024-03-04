@@ -47,7 +47,7 @@ Layout
 ================ */
 
 .container {
-    /* border: 1px solid magenta; */
+    border: 1px solid magenta;
 
     width: 90%;
     max-width: 1500px;
