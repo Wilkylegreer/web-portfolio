@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/photo-main.css">
     <link rel="stylesheet" type="text/css" href="../css/gallery.css">
-    <link rel="stylesheet" type="text/css" href="../css/block-sec.css">
     <title>Will Greer | Photography</title>
 </head>
 <body>
@@ -23,7 +22,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="current-page">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Recent Posts</a></li>
                 </ul>
@@ -56,24 +55,107 @@
     Photo Galleries
     ==================== -->
 
-    <div class="container container-flex">
-            <button onclick="openCity(event, 'Engagement')">Engagement</button>
-            <button onclick="openCity(event, 'Portrait')">Portrait</button>
-            <button onclick="openCity(event, 'Other')">Other</button>
+    <div class="container container-flex tabs">
+            <button class="btn current-page" onclick="openCity(event, 'Engagement')">Engagement</button>
+            <button class="btn" onclick="openCity(event, 'Portrait')">Portrait</button>
+            <button class="btn" onclick="openCity(event, 'Other')">Other</button>
     </div>
 
     <div class="container container-flex">
-        <div id="Engagement" class="tabcontent">
-            <h1>Engagement</h1>
+        <div id="Engagement" class="tabcontent" style="display: block;">
+            <section id="photos">
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+            </section>
         </div>
 
         <div id="Portrait" class="tabcontent">
-            <h1>Portrait</h1>
+            <section id="photos">
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+            </section>
         </div>
 
         <div id="Other" class="tabcontent">
-            <h1>Other</h1>
+            <section id="photos">
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+                <div class="column">
+                    <img src="../photos/New_Pic.jpg" alt="Profile Picture">
+                    <img src="../photos/NewYears-16.jpg" alt="New Years Picture">
+                    <img src="../photos/Winter-Lake.jpg" alt="Winter Picture">
+                    <img src="../photos/B&W-1.jpg" alt="Winter Picture">
+                </div>
+            </section>
         </div>
+    </div>
+
+    <!-- ===============
+    Pricing Part
+    ==================== -->
+
+    <div class="container container-flex">
+        <p>Hey</p>
     </div>
 
     <!-- ===============
@@ -87,12 +169,14 @@
           for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
           }
-          tablinks = document.getElementsByClassName("tablinks");
+          tablinks = document.getElementsByClassName("btn");
           for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
+            tablinks[i].className = tablinks[i].className.replace(" current-page", "");
           }
           document.getElementById(tabName).style.display = "block";
           evt.currentTarget.className += " active";
+          evt.currentTarget.className += " current-page";
         }
     </script>
 

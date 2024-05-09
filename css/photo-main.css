@@ -52,6 +52,7 @@ Layout
     width: 90%;
     max-width: 1500px;
     margin: 0 auto;
+    overflow: auto;
 }
 
 .container-flex {
@@ -64,7 +65,7 @@ Layout
 
     height: 70vh;
     width: 90%;
-    padding-bottom: 5em;
+    padding-bottom: 1em;
 }
 
 .col-2 img {
